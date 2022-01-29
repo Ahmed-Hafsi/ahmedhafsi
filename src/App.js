@@ -1,25 +1,22 @@
-import logo from './logo.svg';
+import imagInSrc from './imagInSrc.jpeg';
 import './App.css';
-
+import './style.css';
+import Bike from './video/Bike.mp4';
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+    <div style={{border: 'solid 1px noir', maxWidth: '100vw'}}>
+      <h1 className="titleRed">ahmed</h1>
+      <br />
+      <img src={imagInSrc} alt=""/>
+      <br />
+      <img src={"./imageInPublic.jpg"} alt=""/>
+      </div>
+     <video autoPlay loop muted width={320} height={240} controls>
+   <source src={Bike} type="video/mp4" />
+    </video>
     </div>
-  );
-}
+)
+};
 
 export default App;
